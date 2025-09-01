@@ -1,0 +1,324 @@
+/* 
+   CSS Fundamentals Assignment - styles.css
+   Demonstrates: Selectors, Box Model, Typography, Layout, and Styling Properties
+*/
+
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Georgia', serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f8f9fa;
+}
+
+/* Typography Styles */
+h1 {
+    font-size: 2.5rem;
+    color: #2c3e50;
+    text-align: center;
+    margin-bottom: 1rem;
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 2rem;
+    color: #34495e;
+    margin-bottom: 1.5rem;
+    border-bottom: 3px solid #3498db;
+    padding-bottom: 0.5rem;
+}
+
+h3 {
+    font-size: 1.4rem;
+    color: #2c3e50;
+    margin-bottom: 1rem;
+}
+
+p {
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+    color: #555;
+}
+
+/* Header Styling */
+.main-header {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 2rem 0;
+    margin-bottom: 2rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.main-header h1 {
+    color: white;
+    margin-bottom: 1.5rem;
+}
+
+/* Navigation Styling */
+.navigation ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.navigation a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+    padding: 0.5rem 1rem;
+    border: 2px solid transparent;
+    border-radius: 25px;
+    transition: all 0.3s ease;
+}
+
+.navigation a:hover {
+    border-color: white;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Main Container */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+/* Section Spacing */
+section {
+    margin-bottom: 4rem;
+}
+
+/* Introduction Section */
+.intro-section {
+    background-color: white;
+    padding: 2.5rem;
+    border-radius: 12px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+    border-left: 5px solid #e74c3c;
+}
+
+.intro-text {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    color: #444;
+}
+
+/* Card Container and Cards - Demonstrates Box Model */
+.card-container {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.card {
+    /* Content area */
+    width: 300px;
+    
+    /* Padding - space between content and border */
+    padding: 2rem;
+    
+    /* Border - visible boundary around padding */
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    
+    /* Margin - space outside the border */
+    margin: 1rem 0;
+    
+    /* Background and visual styling */
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Different card color schemes */
+.box-model-card {
+    border-color: #3498db;
+}
+
+.typography-card {
+    border-color: #2ecc71;
+}
+
+.layout-card {
+    border-color: #f39c12;
+}
+
+/* Button Styling - More Box Model Practice */
+.demo-button {
+    /* Content styling */
+    font-size: 1rem;
+    color: white;
+    text-decoration: none;
+    
+    /* Box Model properties */
+    padding: 0.75rem 1.5rem;
+    margin-top: 1rem;
+    border: none;
+    border-radius: 6px;
+    
+    /* Visual styling */
+    background-color: #3498db;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.demo-button:hover {
+    background-color: #2980b9;
+}
+
+.demo-button.secondary {
+    background-color: #2ecc71;
+}
+
+.demo-button.secondary:hover {
+    background-color: #27ae60;
+}
+
+.demo-button.accent {
+    background-color: #f39c12;
+}
+
+.demo-button.accent:hover {
+    background-color: #d68910;
+}
+
+/* Box Model Demonstration Section */
+.box-model-demo {
+    background-color: #ecf0f1;
+    padding: 3rem;
+    border-radius: 12px;
+    margin: 3rem 0;
+}
+
+.box-model-example {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.content-box {
+    /* This box clearly demonstrates the Box Model layers */
+    
+    /* Content area with text */
+    width: 400px;
+    
+    /* Padding - creates blue background space around content */
+    padding: 2rem;
+    background-color: #e3f2fd;
+    
+    /* Border - visible boundary */
+    border: 4px solid #2196f3;
+    
+    /* Margin - creates space outside the border */
+    margin: 2rem;
+    
+    /* Additional styling */
+    border-radius: 8px;
+    text-align: center;
+}
+
+.content-box ul {
+    text-align: left;
+    margin-top: 1rem;
+    padding-left: 1.5rem;
+}
+
+.content-box li {
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+}
+
+/* Contact Section */
+.contact-section {
+    background: linear-gradient(45deg, #667eea, #764ba2);
+    color: white;
+    padding: 3rem;
+    border-radius: 12px;
+    text-align: center;
+}
+
+.contact-section h2 {
+    color: white;
+    border-bottom-color: rgba(255, 255, 255, 0.3);
+}
+
+.contact-card {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 2rem;
+    border-radius: 8px;
+    margin-top: 2rem;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.contact-info {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.contact-item {
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 0.75rem 1.5rem;
+    border-radius: 25px;
+    font-size: 1rem;
+}
+
+/* Footer Styling */
+.main-footer {
+    background-color: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 2rem;
+    margin-top: 3rem;
+}
+
+.main-footer p {
+    color: #bdc3c7;
+    margin: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .card-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .card {
+        width: 100%;
+        max-width: 400px;
+    }
+    
+    .navigation ul {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    
+    .contact-info {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    h1 {
+        font-size: 2rem;
+    }
+    
+    h2 {
+        font-size: 1.7rem;
+    }
+}

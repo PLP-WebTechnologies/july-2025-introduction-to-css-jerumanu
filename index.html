@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Fundamentals Assignment</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="main-header">
+        <h1>CSS Fundamentals Assignment</h1>
+        <nav class="navigation">
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content Container -->
+    <main class="container">
+        <!-- Introduction Section -->
+        <section id="about" class="intro-section">
+            <h2>Understanding the CSS Box Model</h2>
+            <p class="intro-text">
+                Welcome to this demonstration of CSS fundamentals! This page showcases how the 
+                CSS Box Model works with margin, padding, and borders to create structured layouts. 
+                Every element you see has been carefully styled to demonstrate these core concepts.
+            </p>
+        </section>
+
+        <!-- Features Section with Cards -->
+        <section id="features" class="features-section">
+            <h2>Key CSS Concepts Demonstrated</h2>
+            
+            <div class="card-container">
+                <div class="card box-model-card">
+                    <h3>Box Model</h3>
+                    <p>This card demonstrates margin, padding, and border properties working together to create spacing and visual boundaries.</p>
+                    <button class="demo-button">Learn More</button>
+                </div>
+
+                <div class="card typography-card">
+                    <h3>Typography</h3>
+                    <p>Font sizing, colors, and text styling create hierarchy and improve readability throughout the page.</p>
+                    <button class="demo-button secondary">Explore</button>
+                </div>
+
+                <div class="card layout-card">
+                    <h3>Layout & Spacing</h3>
+                    <p>Strategic use of margins and padding creates visual rhythm and organized content flow.</p>
+                    <button class="demo-button accent">Discover</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Box Model Visualization Section -->
+        <section class="box-model-demo">
+            <h2>Interactive Box Model Example</h2>
+            <div class="box-model-example">
+                <div class="content-box">
+                    <p>This box clearly shows:</p>
+                    <ul>
+                        <li><strong>Content:</strong> This text and list</li>
+                        <li><strong>Padding:</strong> Blue background space around content</li>
+                        <li><strong>Border:</strong> Solid line around padding</li>
+                        <li><strong>Margin:</strong> Transparent space outside border</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact-section">
+            <h2>Get In Touch</h2>
+            <div class="contact-card">
+                <p>Have questions about CSS or web development? Feel free to reach out!</p>
+                <div class="contact-info">
+                    <span class="contact-item">📧 css@example.com</span>
+                    <span class="contact-item">📱 (555) 123-4567</span>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <p>&copy; 2024 CSS Fundamentals Assignment. Demonstrating clean, structured styling.</p>
+    </footer>
+</body>
+</html>
